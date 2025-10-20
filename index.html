@@ -1,40 +1,66 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LaTripletaSupport</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LaTripletaSupport</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/base.css">
+  <link rel="stylesheet" href="./assets/css/componentes.css">
 </head>
+
 <body>
-    <header>
-        <nav>
-            <div class="nav-container">
-                <h1>LaTripletaSupport</h1>
-                <ul>
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#recursos">Recursos</a></li>
-                    <li><a href="#redes">Redes</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <section id="inicio">
-            <h2>Inicio</h2>
-            <p>Bienvenido a LaTripletaSupport. Aquí encontrarás información sobre nuestros servicios.</p>
-        </section>
-        <section id="servicios">
-            <h2>Servicios</h2>
-            <p>Ofrecemos una variedad de servicios para apoyar tus necesidades. Detalles próximamente.</p>
-        </section>
-        <section id="contacto">
-            <h2>Contacto</h2>
-            <p>Ponte en contacto con nosotros para más información. Email: info@latripletasupport.com</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2023 LaTripletaSupport. Todos los derechos reservados.</p>
-    </footer>
+  <header class="header">
+    <div class="nav-inner">
+      <div class="brand">
+        <div class="logo">
+          <!-- Si tienes logo PNG pon <img src="assets/logo.png" alt=""> -->
+          LT
+        </div>
+        <span class="brand-name">LA TRIPLETA SUPPORT</span>
+      </div>
+
+      <nav class="main-nav">
+        <ul>
+          <li><a class="btn-donar" href="#donar">Donar ▸</a></li>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#recursos">Recursos</a></li>
+          
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-inner">
+        <div class="hero-izq">
+          <h1><span>LA TRIPLETA</span><br><span>SUPPORT</span></h1>
+          <h1 class="subtitulo">Tutoriales de programación y más</h1><br><br>
+          <a class="btn primary" href="#canal">Ve a nuestro canal</a>
+        </div>
+        <div class="hero-imagen">
+          <img src="./assets/img/fondo.jpg" alt="Fondo hero" />
+        </div>
+      </div>
+    </section>
+
+    <section id="servicios" class="content-section">
+      <h2>Servicios</h2>
+      <p>Ofrecemos una variedad de servicios para apoyar tus necesidades. Detalles próximamente.</p>
+    </section>
+
+    <section id="contacto" class="content-section">
+      <h2>Contacto</h2>
+      <p>Email: info@latripletasupport.com</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 LaTripletaSupport. Todos los derechos reservados.</p>
+  </footer>
 </body>
+
 </html>

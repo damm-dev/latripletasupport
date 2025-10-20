@@ -1,0 +1,116 @@
+/* Brand y Logo */
+.brand{
+  display:flex;
+  align-items:center;
+  gap:14px;
+}
+
+.logo{
+  width:46px;
+  height:46px;
+  border-radius:50%;
+  background:linear-gradient(135deg,#0fd1d1 0%,#2ea6ff 100%);
+  color:#071017;
+  font-weight:800;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow:0 2px 0 rgba(0,0,0,0.3) inset;
+  font-size:18px;
+}
+
+.brand-name{
+  font-weight:700;
+  letter-spacing:0.6px;
+  font-size:14px;
+}
+
+/* Botón donar */
+.btn-donar{
+  background:#fff;
+  padding:8px 14px;
+  border-radius:6px;
+  border:2px solid #b87a38;
+  font-weight:600;
+}
+
+/* Hero section */
+.hero{
+  padding:36px 20px 60px;
+}
+
+.hero-inner {
+  max-width: var(--max-width);
+  width: calc(100% - 80px);
+  height: 40px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  background: transparent;
+  box-shadow: 0 0 0 22px rgba(0,0,0,0.5) inset;
+  align-items: stretch;
+  min-height: 520px;
+}
+
+.hero-izq{
+  background:var(--panel);
+  padding-right: 90px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding-left:100px;
+}
+
+.hero-izq h1{
+  margin:8px;
+  padding: 10px;
+  font-weight:600;
+  line-height:1.2;
+  text-transform:uppercase;
+  font-size:60px;
+}
+
+.hero-izq .subtitulo{
+  color:var(--muted);
+  font-size: 16px;
+  margin-top: 0;
+}
+
+.hero-imagen{
+  overflow:hidden;
+  background:var(--panel-2);
+  display:flex;
+  align-items:stretch;
+  justify-content:stretch;
+}
+
+.hero-imagen img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
+/* Media Queries específicos */
+@media (max-width:900px){
+  .hero-inner{
+    grid-template-columns:1fr; 
+    min-height:520px;
+    margin:0 auto;
+  }
+  .hero-left{
+    padding:56px 28px; 
+    align-items:center; 
+    text-align:center; 
+    padding-left:unset;
+  }
+  .brand-name{display:none}
+}
+
+@media (max-width:480px){
+  .hero-left h1{font-size:48px}
+  .hero-left{padding:36px 18px}
+}
