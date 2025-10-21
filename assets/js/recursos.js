@@ -1,16 +1,7 @@
 const carreras = {
-    arquitectura: {
-        nombre: "Arquitectura",
-        descripcion: "Profesionales en diseño arquitectónico y urbanismo",
-        materias: {
-            "Materia X": [
-                { nombre: "Material X", enlace: "#" }
-            ]
-        }
-    },
-    civil: {
-        nombre: "Ingeniería Civil",
-        descripcion: "Egresados especializados en construcción e infraestructura",
+    sistemas: {
+        nombre: "Ingeniería de Sistemas Informáticos",
+        descripcion: "Especialistas en tecnología y desarrollo de software",
         materias: {
             "Materia X": [
                 { nombre: "Material X", enlace: "#" }
@@ -26,45 +17,9 @@ const carreras = {
             ]
         }
     },
-    industrial: {
-        nombre: "Ingeniería Industrial",
-        descripcion: "Profesionales en optimización de procesos y sistemas productivos",
-        materias: {
-            "Materia X": [
-                { nombre: "Material X", enlace: "#" }
-            ]
-        }
-    },
-    sistemas: {
-        nombre: "Ingeniería de Sistemas Informáticos",
-        descripcion: "Especialistas en tecnología y desarrollo de software",
-        materias: {
-            "Materia X": [
-                { nombre: "Material X", enlace: "#" }
-            ]
-        }
-    },
-    mecanica: {
-        nombre: "Ingeniería Mecánica",
-        descripcion: "Expertos en diseño y manufactura de sistemas mecánicos",
-        materias: {
-            "Materia X": [
-                { nombre: "Material X", enlace: "#" }
-            ]
-        }
-    },
-    quimica: {
-        nombre: "Ingeniería Química",
-        descripcion: "Profesionales en procesos químicos e industriales",
-        materias: {
-            "Materia X": [
-                { nombre: "Material X", enlace: "#" }
-            ]
-        }
-    },
-    alimentos: {
-        nombre: "Ingeniería de Alimentos",
-        descripcion: "Profesionales en desarrollo, control y producción de alimentos",
+    ciencias: {
+        nombre: "Unidad de Ciencias Básicas",
+        descripcion: "Responsable de la formación inicial de los estudiantes de la Facultad de Ingeniería y Arquitectura en áreas de matemática, física y estadística",
         materias: {
             "Materia X": [
                 { nombre: "Material X", enlace: "#" }
@@ -79,7 +34,7 @@ function mostrarMaterias(carreraId) {
     const contenedor = document.getElementById("materias-container");
     const lista = document.getElementById("lista-materias");
 
-    document.getElementById("titulo-carrera").textContent = `${carrera.nombre}`;
+    document.getElementById("titulo-carrera").textContent = carrera.nombre;
     lista.innerHTML = "";
 
     // agregar descripción si no existe
