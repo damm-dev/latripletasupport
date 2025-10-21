@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/base.css">
   <link rel="stylesheet" href="./assets/css/componentes.css">
-  <link rel="icon" type="image/png" href="assets/img/LOGOt++.png">
+  <link rel="icon" type="image/png" href="./assets/img/LOGOt++.png">
 </head>
 
 <body>
@@ -17,7 +17,7 @@
       <div class="brand">
         <div class="logo">
           <!-- Si tienes logo PNG pon <img src="assets/logo.png" alt=""> -->
-          <img src="assets/img/LOGOt++.png" alt="Logo LaTripletaSupport">
+          <img src="./assets/img/LOGOt++.png" alt="Logo LaTripletaSupport">
         </div>
         <span class="brand-name">LA TRIPLETA SUPPORT</span>
       </div>
@@ -28,7 +28,6 @@
           <li><a href="#inicio">Inicio</a></li>
           <li><a href="redes.html">Redes</a></li>
           <li><a href="recursos.html">Recursos</a></li>
-          
         </ul>
       </nav>
     </div>
@@ -43,25 +42,54 @@
           <a class="btn primary" href="#canal">Ve a nuestro canal</a>
         </div>
         <div class="hero-imagen">
-          <img src="./assets/img/fondo.jpg" alt="Fondo hero" />
+          <div class="video-container">
+            <!-- Reemplaza VIDEO_ID con el ID de tu video de YouTube -->
+            <iframe src="https://www.youtube.com/embed/ASLybshGzxk?autoplay=1&mute=1&loop=1&playlist=ASLybshGzxk"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="servicios" class="content-section">
-      <h2>Servicios</h2>
-      <p>Ofrecemos una variedad de servicios para apoyar tus necesidades. Detalles próximamente.</p>
+    <section id="quienes-somos" class="content-section">
+      <h2>¿Quiénes Somos?</h2>
+      <div class="about-content">
+        <p>Somos un equipo dedicado a compartir conocimiento en programación y tecnología a través de contenido
+          educativo de calidad.</p>
+      </div>
     </section>
+    <section id="videos" class="content-section">
+      <h2>Últimos Videos</h2>
 
-    <section id="contacto" class="content-section">
-      <h2>Contacto</h2>
-      <p>Email: info@latripletasupport.com</p>
+      <!-- Carrusel de videos -->
+      <div class="videos-carousel">
+        <button class="carousel-nav prev" aria-label="Anterior">◀</button>
+        <div class="carousel-viewport">
+          <div class="carousel-track">
+            <!-- Los videos se cargarán dinámicamente aquí -->
+          </div>
+        </div>
+        <button class="carousel-nav next" aria-label="Siguiente">▶</button>
+      </div>
+    </section>
+    <section id="noticias" class="content-section">
+      <h2>Noticias y Avisos</h2>
+      <div class="news-grid">
+        <!-- Los avisos se cargarán dinámicamente -->
+      </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <p>&copy; 2025 LaTripletaSupport. Todos los derechos reservados.</p>
   </footer>
+  <script src="./assets/js/youtube-api.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', loadYoutubeVideos);
+  </script>
 </body>
 
 </html>

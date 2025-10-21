@@ -332,3 +332,118 @@
     width: calc(100% - 40px);
   }
 }
+
+/* Sección Videos */
+.videos-carousel{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin-top:16px;
+}
+.carousel-viewport{
+  overflow:hidden;
+  flex:1;
+}
+.carousel-track{
+  display:flex;
+  gap:12px;
+  transition:transform 0.4s ease;
+  will-change: transform;
+}
+.carousel-item{
+  min-width:240px;
+  max-width:320px;
+  flex:0 0 auto;
+}
+.carousel-item .video-card{
+  background:var(--panel);
+  border-radius:8px;
+  overflow:hidden;
+  box-shadow:0 4px 12px rgba(0,0,0,0.06);
+  cursor:pointer;
+}
+.carousel-item img{
+  width:100%;
+  height:160px;
+  object-fit:cover;
+  display:block;
+}
+.carousel-item .video-info{
+  padding:10px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:8px;
+}
+.play-btn{
+  background:var(--accent, #2ea6ff);
+  color:#fff;
+  border:0;
+  padding:6px 10px;
+  border-radius:6px;
+  cursor:pointer;
+}
+
+/* Navegación */
+.carousel-nav{
+  background:var(--panel-2);
+  border:0;
+  padding:8px 12px;
+  border-radius:6px;
+  cursor:pointer;
+  font-size:18px;
+}
+.carousel-nav:disabled{
+  opacity:0.4;
+  cursor:default;
+}
+
+/* Modal vídeo */
+.video-modal{
+  position:fixed;
+  inset:0;
+  display:none;
+  align-items:center;
+  justify-content:center;
+  z-index:9999;
+}
+.video-modal.open{
+  display:flex;
+}
+.video-modal-backdrop{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,0.6);
+}
+.video-modal-inner{
+  position:relative;
+  max-width:1000px;
+  width:90%;
+  aspect-ratio:16/9;
+  z-index:1;
+}
+.video-modal-content iframe{
+  width:100%;
+  height:100%;
+  border:0;
+  border-radius:8px;
+  display:block;
+}
+.video-modal-close{
+  position:absolute;
+  right:-12px;
+  top:-12px;
+  background:#fff;
+  border:0;
+  border-radius:50%;
+  width:36px;
+  height:36px;
+  cursor:pointer;
+  box-shadow:0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* Ajustes móviles */
+@media (max-width:600px){
+  .carousel-item img{ height:140px; }
+  .video-modal-inner{ width:95%; }
+}
