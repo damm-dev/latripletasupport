@@ -1,45 +1,96 @@
 const carreras = {
-    sistemas: {
-        nombre: "Ingeniería en Sistemas",
+    arquitectura: {
+        nombre: "Arquitectura",
+        descripcion: "Profesionales en diseño arquitectónico y urbanismo",
         materias: {
-            "Programación I": [
-                { nombre: "Guía de Python", enlace: "#" },
-                { nombre: "Video Introducción", enlace: "#" }
-            ],
-            "Base de Datos": [
-                { nombre: "Apuntes SQL", enlace: "#" },
-                { nombre: "Video Normalización", enlace: "#" }
+            "Materia X": [
+                { nombre: "Material X", enlace: "#" }
             ]
         }
     },
-    electronica: {
-        nombre: "Ingeniería Electrónica",
+    civil: {
+        nombre: "Ingeniería Civil",
+        descripcion: "Egresados especializados en construcción e infraestructura",
         materias: {
-            "Circuitos I": [
-                { nombre: "PDF de resistencias", enlace: "#" }
-            ],
-            "Microcontroladores": [
-                { nombre: "Proyecto Arduino", enlace: "#" }
+            "Materia X": [
+                { nombre: "Material X", enlace: "#" }
+            ]
+        }
+    },
+    electrica: {
+        nombre: "Ingeniería Eléctrica",
+        descripcion: "Especialistas en sistemas eléctricos y energía",
+        materias: {
+            "Materia X": [
+                { nombre: "Material X", enlace: "#" }
             ]
         }
     },
     industrial: {
         nombre: "Ingeniería Industrial",
+        descripcion: "Profesionales en optimización de procesos y sistemas productivos",
         materias: {
-            "Gestión de Calidad": [
-                { nombre: "ISO 9001 resumen", enlace: "#" }
+            "Materia X": [
+                { nombre: "Material X", enlace: "#" }
+            ]
+        }
+    },
+    sistemas: {
+        nombre: "Ingeniería de Sistemas Informáticos",
+        descripcion: "Especialistas en tecnología y desarrollo de software",
+        materias: {
+            "Materia X": [
+                { nombre: "Material X", enlace: "#" }
+            ]
+        }
+    },
+    mecanica: {
+        nombre: "Ingeniería Mecánica",
+        descripcion: "Expertos en diseño y manufactura de sistemas mecánicos",
+        materias: {
+            "Materia X": [
+                { nombre: "Material X", enlace: "#" }
+            ]
+        }
+    },
+    quimica: {
+        nombre: "Ingeniería Química",
+        descripcion: "Profesionales en procesos químicos e industriales",
+        materias: {
+            "Materia X": [
+                { nombre: "Material X", enlace: "#" }
+            ]
+        }
+    },
+    alimentos: {
+        nombre: "Ingeniería de Alimentos",
+        descripcion: "Profesionales en desarrollo, control y producción de alimentos",
+        materias: {
+            "Materia X": [
+                { nombre: "Material X", enlace: "#" }
             ]
         }
     }
 };
 
+// ===== Funciones para mostrar materias y materiales =====
 function mostrarMaterias(carreraId) {
     const carrera = carreras[carreraId];
     const contenedor = document.getElementById("materias-container");
     const lista = document.getElementById("lista-materias");
 
-    document.getElementById("titulo-carrera").textContent = carrera.nombre;
+    document.getElementById("titulo-carrera").textContent = `${carrera.nombre}`;
     lista.innerHTML = "";
+
+    // agregar descripción si no existe
+    if (!document.getElementById("descripcion-carrera")) {
+        const desc = document.createElement("p");
+        desc.id = "descripcion-carrera";
+        desc.style.marginBottom = "1rem";
+        desc.style.color = "#ccc";
+        contenedor.insertBefore(desc, lista);
+    }
+    document.getElementById("descripcion-carrera").textContent = carrera.descripcion;
 
     for (let materia in carrera.materias) {
         const li = document.createElement("li");

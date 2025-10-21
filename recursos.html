@@ -49,20 +49,13 @@
 
         <section id="carreras" class="content-section">
             <h2>Carreras</h2>
-            <div class="carreras-container">
-                <div class="carrera" onclick="mostrarMaterias('sistemas')">
-                    <h3>Ingeniería en Sistemas</h3>
-                </div>
-                <div class="carrera" onclick="mostrarMaterias('electronica')">
-                    <h3>Ingeniería Electrónica</h3>
-                </div>
-                <div class="carrera" onclick="mostrarMaterias('industrial')">
-                    <h3>Ingeniería Industrial</h3>
-                </div>
+            <div class="carreras-container" id="carreras-container">
+
             </div>
 
             <div id="materias-container" class="popup oculto">
                 <h3 id="titulo-carrera"></h3>
+                <p id="descripcion-carrera"></p>
                 <ul id="lista-materias"></ul>
                 <button onclick="cerrarPopup()">Cerrar</button>
             </div>
@@ -85,6 +78,21 @@
     </footer>
 
     <script src="./assets/js/recursos.js"></script>
+    <script>
+        const contenedorCarreras = document.getElementById("carreras-container");
+
+        for (let key in carreras) {
+            const div = document.createElement("div");
+            div.className = "carrera";
+            div.onclick = () => mostrarMaterias(key);
+
+            const h3 = document.createElement("h3");
+            h3.textContent = carreras[key].nombre;
+
+            div.appendChild(h3);
+            contenedorCarreras.appendChild(div);
+        }
+    </script>
 </body>
 
 </html>
