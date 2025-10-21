@@ -8,6 +8,13 @@
   --max-width: 1400px;
 }
 
+/* Optimización de fuentes */
+@font-face {
+  font-family: 'Montserrat';
+  font-display: swap;
+  src: local('Montserrat');
+}
+
 /* Estilos base */
 * {
   box-sizing: border-box
@@ -21,8 +28,7 @@ body {
 body {
   margin: 0;
   padding-top: 80px;
-  /* Ajusta este valor según la altura de tu header */
-  font-family: "Montserrat", system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
   background: var(--bg);
   color: var(--text);
   -webkit-font-smoothing: antialiased;
@@ -114,12 +120,23 @@ body {
 }
 
 .enlace-personalizado {
-  color: #00bfff;
-  text-decoration: none;
+  color: #4DC4FF;
+  /* Color más contrastante que el anterior */
+  text-decoration: underline;
+  /* Subrayado visible siempre */
+  font-weight: 600;
+  /* Texto semi-negrita para mayor visibilidad */
+  transition: color 0.2s ease;
 }
 
-.enlace-personalizado:hover {
+.enlace-personalizado:hover,
+.enlace-personalizado:focus {
+  color: #7ED5FF;
+  /* Color más claro al pasar el mouse */
   text-decoration: underline;
+  outline: 2px solid currentColor;
+  /* Indicador visual para foco */
+  outline-offset: 2px;
 }
 
 .video-container {

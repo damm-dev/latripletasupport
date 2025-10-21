@@ -21,18 +21,30 @@
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="./assets/img/LOGOt++.png">
 
-  <!-- Preconnect y Preload para optimizar carga de Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!-- Optimización de recursos críticos -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://www.youtube.com" crossorigin>
+
+  <!-- Precargas optimizadas -->
+  <link rel="preload" href="./assets/css/base.css" as="style">
+  <link rel="preload" href="./assets/css/componentes.css" as="style">
   <link rel="preload" href="https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2" as="font"
     type="font/woff2" crossorigin>
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+  <!-- Fuentes optimizadas -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet"
+    media="print" onload="this.media='all'">
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+  </noscript>
 
   <!-- Estilos CSS -->
   <link rel="stylesheet" href="./assets/css/base.css">
   <link rel="stylesheet" href="./assets/css/componentes.css">
+
+  <!-- Scripts diferidos -->
+  <script src="./assets/js/youtube-api.js" defer></script>
 </head>
 
 <body>
@@ -49,7 +61,8 @@
 
       <nav class="main-nav">
         <ul>
-          <li><a class="btn-donar" href="https://www.youtube.com/@LaTripletaSupport/posts">Publicaciones YT ▸</a></li>
+          <li><a class="btn-donar" href="https://www.youtube.com/@LaTripletaSupport/posts">Publicaciones YT ▸</a>
+          </li>
           <li><a href="index.html">Inicio</a></li>
           <li><a href="redes.html">Redes</a></li>
           <li><a href="recursos.html">Recursos</a></li>
@@ -91,8 +104,10 @@
           claras y ejemplos prácticos que puedas aplicar inmediatamente en tus proyectos.</p>
         <p>Ofrecemos tutoriales paso a paso, ejemplos de código, recursos descargables y guía comunitaria. Publicamos
           contenido orientado a niveles desde principiantes hasta avanzados, y estamos abiertos a sugerencias y
-          colaboraciones. ¿Tienes un tema que te interese? Escríbenos o visita <a href="redes.html"
-            class="enlace-personalizado">nuestras redes</a> para más información.</p>
+          colaboraciones. ¿Tienes un tema que te interese? Escríbenos o visita
+          <a href="redes.html" class="enlace-personalizado">nuestras redes</a>
+          para más información.
+        </p>
       </div>
     </section>
     <section id="temas" class="content-section">
@@ -161,7 +176,6 @@
   <footer class="site-footer">
     <p>&copy; 2025 LaTripletaSupport. Todos los derechos reservados.</p>
   </footer>
-  <script src="./assets/js/youtube-api.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', loadYoutubeVideos);
   </script>
