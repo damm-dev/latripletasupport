@@ -3,31 +3,53 @@ const carreras = {
         nombre: "Ingeniería de Sistemas Informáticos",
         descripcion: "Especialistas en tecnología y desarrollo de software",
         materias: {
-            "Materia X": [
-                { nombre: "Material X", enlace: "#" }
-            ]
+            "Introducción a la Informática": [{ nombre: "Material X", enlace: "#" }],
+            "Programación I": [{ nombre: "Material X", enlace: "#" }],
+            "Manejo de Software para Microcomputadoras": [{ nombre: "Material X", enlace: "#" }],
+            "Programación II": [{ nombre: "Material X", enlace: "#" }],
+            "Estructuras de Datos": [{ nombre: "Material X", enlace: "#" }],
+            "Programación III": [{ nombre: "Material X", enlace: "#" }],
+            "Sistemas y Procedimientos": [{ nombre: "Material X", enlace: "#" }],
+            "Arquitectura de Computadoras": [{ nombre: "Material X", enlace: "#" }],
+            "Diseño de Sistemas I": [{ nombre: "Material X", enlace: "#" }],
+            "Diseño de Sistemas II": [{ nombre: "Material X", enlace: "#" }]
         }
     },
     electrica: {
         nombre: "Ingeniería Eléctrica",
         descripcion: "Especialistas en sistemas eléctricos y energía",
         materias: {
-            "Materia X": [
-                { nombre: "Material X", enlace: "#" }
-            ]
+            "Sistemas Digitales": [{ nombre: "Material X", enlace: "#" }]
+        }
+    },
+    industrial: {
+        nombre: "Ingeniería Industrial",
+        descripcion: "Profesionales en optimización de procesos y sistemas productivos",
+        materias: {
+            "Historia Social y Económica de El Salvador y C.A.": [{ nombre: "Material X", enlace: "#" }],
+            "Fundamentos de Economía": [{ nombre: "Material X", enlace: "#" }],
+            "Métodos de Optimización": [{ nombre: "Material X", enlace: "#" }],
+            "Ingeniería Económica": [{ nombre: "Material X", enlace: "#" }],
+            "Recursos Humanos": [{ nombre: "Material X", enlace: "#" }],
+            "Psicología Social": [{ nombre: "Material X", enlace: "#" }]
         }
     },
     ciencias: {
         nombre: "Unidad de Ciencias Básicas",
         descripcion: "Responsable de la formación inicial de los estudiantes de la Facultad de Ingeniería y Arquitectura en áreas de matemática, física y estadística",
         materias: {
-            "Materia X": [
-                { nombre: "Material X", enlace: "#" }
-            ]
+            "Matemática I": [{ nombre: "Material X", enlace: "#" }],
+            "Matemática II": [{ nombre: "Material X", enlace: "#" }],
+            "Matemática III": [{ nombre: "Material X", enlace: "#" }],
+            "Matemática IV": [{ nombre: "Material X", enlace: "#" }],
+            "Probabilidad y estadística": [{ nombre: "Material X", enlace: "#" }],
+            "Métodos Experimentales": [{ nombre: "Material X", enlace: "#" }],
+            "Física I": [{ nombre: "Material X", enlace: "#" }],
+            "Física II": [{ nombre: "Material X", enlace: "#" }],
+            "Física III": [{ nombre: "Material X", enlace: "#" }]
         }
     }
 };
-
 // ===== Funciones para mostrar materias y materiales =====
 function mostrarMaterias(carreraId) {
     const carrera = carreras[carreraId];

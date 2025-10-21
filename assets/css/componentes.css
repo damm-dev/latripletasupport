@@ -131,6 +131,48 @@
   }
 }
 
+#lista-materias li {
+  list-style: none;
+  display: inline-block;
+  margin: 0.3rem 0.5rem 0.3rem 0;
+  padding: 0.4rem 0.8rem;
+  background-color: #333;
+  color: #f0f0f0 !important;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  text-decoration: none !important;
+}
+
+#lista-materias li:hover {
+  background-color: #555;
+  color: #fff !important;
+  transform: scale(1.05);
+}
+
+#lista-materiales a,
+#lista-materiales a:link,
+#lista-materiales a:visited,
+#lista-materiales a:hover,
+#lista-materiales a:active {
+  display: inline-block;
+  margin: 0.3rem 0.5rem 0.3rem 0;
+  padding: 0.4rem 0.8rem;
+  background-color: #333;
+  color: #f0f0f0 !important;
+  border-radius: 6px;
+  font-weight: 500;
+  text-decoration: none !important;
+  transition: all 0.3s ease;
+}
+
+#lista-materiales a:hover {
+  background-color: #555;
+  color: #fff !important;
+  transform: scale(1.05);
+}
+
 #carreras {
   margin-top: 3rem;
   text-align: center;
@@ -226,18 +268,24 @@
 #carreras .popup button:hover {
   background: #555;
 }
-@media (max-width:480px){
-  .hero-left h1{font-size:48px}
-  .hero-left{padding:36px 18px}
+
+@media (max-width:480px) {
+  .hero-left h1 {
+    font-size: 48px
+  }
+
+  .hero-left {
+    padding: 36px 18px
+  }
 }
 
 /* ===== Redes (scoped) ===== */
-.social-section .social-desc{
+.social-section .social-desc {
   color: var(--muted);
   margin: 10px 0 22px;
 }
 
-.social-section .social-grid{
+.social-section .social-grid {
   max-width: var(--max-width);
   width: calc(100% - 80px);
   margin: 20px auto 0;
@@ -246,18 +294,18 @@
   gap: 22px;
 }
 
-.social-card{
+.social-card {
   display: grid;
   grid-template-columns: 70px 1fr;
   gap: 16px;
   align-items: center;
   background: var(--panel);
-  border: 1px solid rgba(255,255,255,0.06);
+  border: 1px solid rgba(255, 255, 255, 0.06);
   border-radius: 14px;
   padding: 18px;
 }
 
-.social-card .icon{
+.social-card .icon {
   width: 56px;
   height: 56px;
   border-radius: 12px;
@@ -266,28 +314,33 @@
   background: var(--panel-2);
 }
 
-.social-card .icon svg{
+.social-card .icon svg {
   width: 28px;
   height: 28px;
   fill: #fff;
   opacity: 0.9;
 }
 
-.social-card .icon.yt{ box-shadow: 0 0 0 2px rgba(246, 42, 42, 0.35) inset; }
-.social-card .icon.x{ box-shadow: 0 0 0 2px rgba(160, 160, 160, 0.35) inset; }
+.social-card .icon.yt {
+  box-shadow: 0 0 0 2px rgba(246, 42, 42, 0.35) inset;
+}
 
-.social-card h3{
+.social-card .icon.x {
+  box-shadow: 0 0 0 2px rgba(160, 160, 160, 0.35) inset;
+}
+
+.social-card h3 {
   margin: 0 0 6px;
   font-size: 18px;
   letter-spacing: .3px;
 }
 
-.social-card p{
+.social-card p {
   margin: 0 0 12px;
   color: var(--muted);
 }
 
-.social-card .actions .social-btn{
+.social-card .actions .social-btn {
   background: #fff;
   color: #111;
   padding: 10px 16px;
@@ -298,36 +351,41 @@
   border: 2px solid transparent;
 }
 
-.social-card .actions .social-btn:hover{
+.social-card .actions .social-btn:hover {
   border-color: var(--accent);
 }
 
 /* ===== Extras (FAQ) (scoped) ===== */
-.extras-section details{
+.extras-section details {
   background: var(--panel);
-  border: 1px solid rgba(255,255,255,0.06);
+  border: 1px solid rgba(255, 255, 255, 0.06);
   border-radius: 12px;
   padding: 14px 16px;
   margin: 12px 0;
 }
 
-.extras-section summary{
+.extras-section summary {
   cursor: pointer;
   font-weight: 600;
   list-style: none;
 }
 
-.extras-section summary::-webkit-details-marker{ display: none; }
+.extras-section summary::-webkit-details-marker {
+  display: none;
+}
 
-.extras-section details[open]{
+.extras-section details[open] {
   background: linear-gradient(180deg, var(--panel) 0%, #272727 100%);
 }
 
-.extras-section p{ margin: 10px 0 4px; color: var(--muted); }
+.extras-section p {
+  margin: 10px 0 4px;
+  color: var(--muted);
+}
 
 /* ===== Responsive (solo para redes) ===== */
-@media (max-width: 900px){
-  .social-section .social-grid{
+@media (max-width: 900px) {
+  .social-section .social-grid {
     grid-template-columns: 1fr;
     width: calc(100% - 40px);
   }
