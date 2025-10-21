@@ -37,8 +37,14 @@
   background: #fff;
   padding: 8px 14px;
   border-radius: 6px;
-  border: 2px solid #b87a38;
+  border: 2px solid #00bfff;
   font-weight: 600;
+  color: #000 !important;
+}
+
+.btn-donar:hover {
+  background: #00bfff;
+  color: #fff !important;
 }
 
 
@@ -179,7 +185,7 @@
 }
 
 .play-btn {
-  background: var(--accent, #2ea6ff);
+  background: #00bfff;
   color: #fff;
   border: 0;
   padding: 6px 10px;
@@ -195,6 +201,7 @@
   border-radius: 6px;
   cursor: pointer;
   font-size: 18px;
+  color: #00bfff;
 }
 
 .carousel-nav:disabled {
