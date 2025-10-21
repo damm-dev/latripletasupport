@@ -3,8 +3,16 @@ const carreras = {
         nombre: "Ingeniería de Sistemas Informáticos",
         descripcion: "Especialistas en tecnología y desarrollo de software",
         materias: {
-            "Introducción a la Informática": [{ nombre: "Material X", enlace: "#" }],
-            "Programación I": [{ nombre: "Material X", enlace: "#" }],
+            "Introducción a la Informática": [
+                { nombre: "Guía 1", enlace: "https://f1d30bb1-75a0-4a28-b79b-dc94e21a531d.filesusr.com/ugd/84f8d4_fb8fe014c50e4a7cb1fb311eff296528.pdf" },
+                { nombre: "Guía 2", enlace: "https://f1d30bb1-75a0-4a28-b79b-dc94e21a531d.filesusr.com/ugd/84f8d4_6f639f57b1d9444d933de719d5f369d2.pdf" },
+                { nombre: "Guía 3", enlace: "https://f1d30bb1-75a0-4a28-b79b-dc94e21a531d.filesusr.com/ugd/84f8d4_a6a28ec99167413085e7b29b91498c3b.pdf" }
+            ],
+            "Programación I": [
+                { nombre: "Guía 1", enlace: "https://f1d30bb1-75a0-4a28-b79b-dc94e21a531d.filesusr.com/ugd/84f8d4_3813d3278476459b8dad5b8b982ae1b6.pdf" },
+                { nombre: "Guía 2", enlace: "https://f1d30bb1-75a0-4a28-b79b-dc94e21a531d.filesusr.com/ugd/84f8d4_8acd8704337a475eb566e8fc054f72bd.pdf" },
+                { nombre: "Guía 3", enlace: "https://f1d30bb1-75a0-4a28-b79b-dc94e21a531d.filesusr.com/ugd/84f8d4_069b0032eacc4d7cb1e461a98c1f43d3.pdf" }
+            ],
             "Manejo de Software para Microcomputadoras": [{ nombre: "Material X", enlace: "#" }],
             "Programación II": [{ nombre: "Material X", enlace: "#" }],
             "Estructuras de Datos": [{ nombre: "Material X", enlace: "#" }],
