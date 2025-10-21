@@ -262,6 +262,48 @@
   }
 }
 
+#lista-materias li {
+  list-style: none;
+  display: inline-block;
+  margin: 0.3rem 0.5rem 0.3rem 0;
+  padding: 0.4rem 0.8rem;
+  background-color: #333;
+  color: #f0f0f0 !important;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  text-decoration: none !important;
+}
+
+#lista-materias li:hover {
+  background-color: #555;
+  color: #fff !important;
+  transform: scale(1.05);
+}
+
+#lista-materiales a,
+#lista-materiales a:link,
+#lista-materiales a:visited,
+#lista-materiales a:hover,
+#lista-materiales a:active {
+  display: inline-block;
+  margin: 0.3rem 0.5rem 0.3rem 0;
+  padding: 0.4rem 0.8rem;
+  background-color: #333;
+  color: #f0f0f0 !important;
+  border-radius: 6px;
+  font-weight: 500;
+  text-decoration: none !important;
+  transition: all 0.3s ease;
+}
+
+#lista-materiales a:hover {
+  background-color: #555;
+  color: #fff !important;
+  transform: scale(1.05);
+}
+
 #carreras {
   margin-top: 3rem;
   text-align: center;
