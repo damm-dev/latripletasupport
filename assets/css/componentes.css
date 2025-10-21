@@ -262,6 +262,30 @@
   }
 }
 
+.guia-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+.guia-card {
+  background-color: #333;
+  color: #f0f0f0;
+  padding: 1rem;
+  border-radius: 8px;
+  flex: 1 1 250px;
+  /* mínimo 250px por card y se ajusta */
+  cursor: default;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.guia-card:hover {
+  background-color: #555;
+  transform: translateY(-3px);
+}
+
 #lista-materias li {
   list-style: none;
   display: inline-block;
