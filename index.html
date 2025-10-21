@@ -9,16 +9,30 @@
     content="Tutoriales de programación, recursos y contenido educativo de calidad para desarrolladores. Aprende programación web, móvil y más.">
   <meta name="author" content="LaTripletaSupport">
   <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="LaTripletaSupport - Tutoriales de Programación">
   <meta property="og:description" content="Aprende programación con tutoriales prácticos y recursos de calidad">
   <meta property="og:image" content="./assets/img/LOGOt++.png">
 
   <title>Inicio - La Tripleta Support</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="./assets/img/LOGOt++.png">
+
+  <!-- Preconnect y Preload para optimizar carga de Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="hhttps://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2" as="font"
+    type="font/woff2" crossorigin>
+
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <!-- Estilos CSS -->
   <link rel="stylesheet" href="./assets/css/base.css">
   <link rel="stylesheet" href="./assets/css/componentes.css">
-  <link rel="icon" type="image/png" href="./assets/img/LOGOt++.png">
 </head>
 
 <body>
@@ -54,7 +68,6 @@
         </div>
         <div class="hero-imagen">
           <div class="video-container">
-            <!-- Reemplaza VIDEO_ID con el ID de tu video de YouTube -->
             <iframe src="https://www.youtube.com/embed/ASLybshGzxk?mute=1&loop=1&playlist=ASLybshGzxk"
               title="YouTube video player"
               allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
@@ -62,25 +75,27 @@
           </div>
         </div>
       </div>
+      </div>
     </section>
 
-     <section id="quienes-somos" class="content-section">
+    <section id="quienes-somos" class="content-section">
       <h2>¿Quiénes Somos?</h2>
       <div class="about-content">
         <p>Somos un equipo dedicado a compartir conocimiento en programación y tecnología a través de contenido
           educativo de calidad. Nuestra misión es ayudar a estudiantes y desarrolladores a resolver problemas reales,
           aprender buenas prácticas y construir proyectos prácticos que impulsen su crecimiento profesional.</p>
-        <p>Con más de 3 años de experiencia en el desarrollo de software y la enseñanza, nos especializamos en tecnologías web modernas,
-          desarrollo backend y herramientas de productividad para programadores. Nuestro enfoque se centra en proporcionar explicaciones
+        <p>Con más de 3 años de experiencia en el desarrollo de software y la enseñanza, nos especializamos en
+          tecnologías web modernas,
+          desarrollo backend y herramientas de productividad para programadores. Nuestro enfoque se centra en
+          proporcionar explicaciones
           claras y ejemplos prácticos que puedas aplicar inmediatamente en tus proyectos.</p>
         <p>Ofrecemos tutoriales paso a paso, ejemplos de código, recursos descargables y guía comunitaria. Publicamos
           contenido orientado a niveles desde principiantes hasta avanzados, y estamos abiertos a sugerencias y
-          colaboraciones. ¿Tienes un tema que te interese? Escríbenos o visita <a style="color: #00bfff;"
-            href="redes.html">nuestras redes</a>
-          para más información.</p>
+          colaboraciones. ¿Tienes un tema que te interese? Escríbenos o visita <a href="redes.html"
+            class="enlace-personalizado">nuestras redes</a> para más información.</p>
       </div>
     </section>
-<section id="temas" class="content-section">
+    <section id="temas" class="content-section">
       <h2>Temas de Interés</h2>
       <div class="topics-grid">
         <div class="topic-card">
@@ -120,27 +135,27 @@
           </ul>
         </div>
       </div>
-    
-    <section id="noticias" class="content-section">
-      <h2>Noticias y Avisos</h2>
-      <div class="news-grid">
-        <article class="news-card">
-          <h3>🎉 Nuevo Curso Django</h3>
-          <p>Próximamente lanzaremos un curso completo de Django para principiantes. ¡Mantente atento!</p>
-          <span class="date">Octubre 2023</span>
-        </article>
-        <article class="news-card">
-          <h3>📱 Series de APIs REST</h3>
-          <p>Nueva serie sobre cómo construir APIs REST profesionales con Express y MongoDB.</p>
-          <span class="date">En curso</span>
-        </article>
-        <article class="news-card">
-          <h3>🎯 Tutorías Personalizadas</h3>
-          <p>Abriremos espacios para tutorías uno a uno. Más detalles próximamente.</p>
-          <span class="date">Próximamente</span>
-        </article>
-      </div>
-    </section>
+
+      <section id="noticias" class="content-section">
+        <h2>Noticias y Avisos</h2>
+        <div class="news-grid">
+          <article class="news-card">
+            <h3>🎉 Nuevo Curso Django</h3>
+            <p>Próximamente lanzaremos un curso completo de Django para principiantes. ¡Mantente atento!</p>
+            <span class="date">Octubre 2023</span>
+          </article>
+          <article class="news-card">
+            <h3>📱 Series de APIs REST</h3>
+            <p>Nueva serie sobre cómo construir APIs REST profesionales con Express y MongoDB.</p>
+            <span class="date">En curso</span>
+          </article>
+          <article class="news-card">
+            <h3>🎯 Tutorías Personalizadas</h3>
+            <p>Abriremos espacios para tutorías uno a uno. Más detalles próximamente.</p>
+            <span class="date">Próximamente</span>
+          </article>
+        </div>
+      </section>
   </main>
 
   <footer class="site-footer">
