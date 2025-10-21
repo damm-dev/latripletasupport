@@ -6,8 +6,8 @@
 }
 
 .logo{
-  width:46px;
-  height:46px;
+  width:50px;
+  height: 50px;
   border-radius:50%;
   background:linear-gradient(135deg,#0fd1d1 0%,#2ea6ff 100%);
   color:#071017;
@@ -19,10 +19,17 @@
   font-size:18px;
 }
 
+.logo img {
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  border-radius:50%;
+}
+
 .brand-name{
   font-weight:700;
   letter-spacing:0.6px;
-  font-size:14px;
+  font-size:24px;
 }
 
 /* Botón donar */
