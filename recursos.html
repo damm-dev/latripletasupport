@@ -2,66 +2,89 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Recursos - LaTripletaSupport</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./assets/css/base.css">
-  <link rel="stylesheet" href="./assets/css/componentes.css">
-  <link rel="icon" type="image/png" href="assets/img/LOGOt++.png">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recursos - LaTripletaSupport</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/componentes.css">
+    <link rel="icon" type="image/png" href="assets/img/LOGOt++.png">
 </head>
 
 <body>
-  <header class="header">
-    <div class="nav-inner">
-      <div class="brand">
-        <div class="logo">
-          <!-- Si tienes logo PNG pon <img src="assets/logo.png" alt=""> -->
-          <img src="assets/img/LOGOt++.png" alt="Logo LaTripletaSupport">
+    <header class="header">
+        <div class="nav-inner">
+            <div class="brand">
+                <div class="logo">
+                    <img src="assets/img/LOGOt++.png" alt="Logo LaTripletaSupport">
+                </div>
+                <span class="brand-name">LA TRIPLETA SUPPORT</span>
+            </div>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a class="btn-donar" href="#donar">Donar ▸</a></li>
+                    <li><a href="index.html#inicio">Inicio</a></li>
+                    <li><a href="redes.html">Redes</a></li>
+                    <li><a href="recursos.html">Recursos</a></li>
+                </ul>
+            </nav>
         </div>
-        <span class="brand-name">LA TRIPLETA SUPPORT</span>
-      </div>
+    </header>
 
-      <nav class="main-nav">
-        <ul>
-          <li><a class="btn-donar" href="#donar">Donar ▸</a></li>
-          <li><a href="index.html#inicio">Inicio</a></li>
-          <li><a href="redes.html">Redes</a></li>
-          <li><a href="recursos.html">Recursos</a></li>
-          
-        </ul>
-      </nav>
-    </div>
-  </header>
+    <main>
+        <section class="hero" id="inicio">
+            <div class="hero-inner">
+                <div class="hero-izq">
+                    <h1><span>RECURSOS</span></h1>
+                    <h1 class="subtitulo">Tutoriales de programación y más</h1><br><br>
+                    <a class="btn primary" href="#canal">Ve a nuestro canal</a>
+                </div>
+                <div class="hero-imagen">
+                    <img src="./assets/img/fondo.jpg" alt="Fondo hero" />
+                </div>
+            </div>
+        </section>
 
-  <main>
-    <section class="hero" id="inicio">
-      <div class="hero-inner">
-        <div class="hero-izq">
-          <h1><span>RECURSOS</span></h1>
-          <h1 class="subtitulo">Tutoriales de programación y más</h1><br><br>
-          <a class="btn primary" href="#canal">Ve a nuestro canal</a>
-        </div>
-        <div class="hero-imagen">
-          <img src="./assets/img/fondo.jpg" alt="Fondo hero" />
-        </div>
-      </div>
-    </section>
+        <section id="carreras" class="content-section">
+            <h2>Carreras</h2>
+            <div class="carreras-container">
+                <div class="carrera" onclick="mostrarMaterias('sistemas')">
+                    <h3>Ingeniería en Sistemas</h3>
+                </div>
+                <div class="carrera" onclick="mostrarMaterias('electronica')">
+                    <h3>Ingeniería Electrónica</h3>
+                </div>
+                <div class="carrera" onclick="mostrarMaterias('industrial')">
+                    <h3>Ingeniería Industrial</h3>
+                </div>
+            </div>
 
-    <section id="servicios" class="content-section">
-      <h2>Servicios</h2>
-      <p>Ofrecemos una variedad de servicios para apoyar tus necesidades. Detalles próximamente.</p>
-    </section>
+            <div id="materias-container" class="popup oculto">
+                <h3 id="titulo-carrera"></h3>
+                <ul id="lista-materias"></ul>
+                <button onclick="cerrarPopup()">Cerrar</button>
+            </div>
 
-    <section id="contacto" class="content-section">
-      <h2>Contacto</h2>
-      <p>Email: info@latripletasupport.com</p>
-    </section>
-  </main>
+            <div id="material-container" class="popup oculto">
+                <h3 id="titulo-materia"></h3>
+                <ul id="lista-materiales"></ul>
+                <button onclick="cerrarMaterial()">Cerrar</button>
+            </div>
+        </section>
 
-  <footer class="site-footer">
-    <p>&copy; 2025 LaTripletaSupport. Todos los derechos reservados.</p>
-  </footer>
+        <section id="contacto" class="content-section">
+            <h2>Contacto</h2>
+            <p>Email: info@latripletasupport.com</p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2025 LaTripletaSupport. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="./assets/js/recursos.js"></script>
 </body>
 
 </html>
