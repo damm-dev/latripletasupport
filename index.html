@@ -5,7 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <meta name="description" content="Tutoriales de programación, recursos y contenido educativo de calidad para desarrolladores. Aprende programación web, móvil y más.">
+  <meta name="description"
+    content="Tutoriales de programación, recursos y contenido educativo de calidad para desarrolladores. Aprende programación web, móvil y más.">
   <meta name="author" content="LaTripletaSupport">
   <meta name="robots" content="index, follow">
   <meta property="og:type" content="website">
@@ -46,8 +47,7 @@
     <section class="hero" id="inicio">
       <div class="hero-inner">
         <div class="hero-izq">
-          <h1><span>LA TRIPLETA</span><br><span>SUPPORT</span></h1>
-          <h1 class="subtitulo">Tutoriales de programación y más</h1><br><br>
+          <h1>La Tripleta Support: Tutoriales de Programación y Más</h1>
           <a class="btn primary" href="https://www.youtube.com/@LaTripletaSupport">Ve a nuestro canal</a>
         </div>
         <div class="hero-imagen">
@@ -55,8 +55,7 @@
             <!-- Reemplaza VIDEO_ID con el ID de tu video de YouTube -->
             <iframe src="https://www.youtube.com/embed/ASLybshGzxk?autoplay=1&mute=1&loop=1&playlist=ASLybshGzxk"
               title="YouTube video player"
-              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen>
+              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
             </iframe>
           </div>
         </div>
@@ -69,32 +68,79 @@
         <p>Somos un equipo dedicado a compartir conocimiento en programación y tecnología a través de contenido
           educativo de calidad. Nuestra misión es ayudar a estudiantes y desarrolladores a resolver problemas reales,
           aprender buenas prácticas y construir proyectos prácticos que impulsen su crecimiento profesional.</p>
-        <p>Ofrecemos tutoriales paso a paso, ejemplos de código, recursos descargables y guía comunitaria. Publicamos
+
+        <p>Creemos firmemente en el poder del código abierto y la colaboración. De hecho, este proyecto nació
+          originalmente
+          como una actividad académica para la materia TPI115 y ha evolucionado hasta convertirse en un repositorio de
+          conocimiento práctico para la comunidad. Aspiramos a ser un punto de encuentro para desarrolladores de habla
+          hispana.</p>
+
+        <p>Nuestro enfoque es 100% práctico. En lugar de centrarnos solo en la teoría abstracta, cada tutorial está
+          diseñado
+          para ser seguido paso a paso, dándote un resultado tangible que puedes probar, entender y añadir a tu
+          portafolio
+          personal.</p>
+
+        <p>Ofrecemos tutoriales, ejemplos de código, recursos descargables y guía comunitaria. Publicamos
           contenido orientado a niveles desde principiantes hasta avanzados, y estamos abiertos a sugerencias y
-          colaboraciones. ¿Tienes un tema que te interese? Escríbenos o visita <a style="color: #00bfff;" href="redes.html">nuestras redes</a>
+          colaboraciones. ¿Tienes un tema que te interese? Escríbenos o visita <a style="color: #00bfff;"
+            href="redes.html">nuestras redes</a>
           para más información.</p>
       </div>
     </section>
+
+    <section id="tecnologias" class="content-section">
+      <h2>Tecnologías Destacadas</h2>
+      <div class="about-content">
+        <p>Nos especializamos en las herramientas que el mercado demanda. Nuestro contenido principal gira en torno a
+          tecnologías clave que te ayudarán a construir aplicaciones robustas y modernas:</p>
+
+        <ul style="margin-top: 1.5rem; margin-bottom: 1.5rem;">
+          <li><strong>Desarrollo Web Backend:</strong> Profundizamos en Python con el framework <strong>Django</strong>,
+            enseñándote a crear APIs RESTful, gestionar bases de datos y construir aplicaciones web seguras y
+            escalables.
+          </li>
+          <li><strong>DevOps Básico:</strong> Te ayudamos a desplegar tus proyectos. Aprende a configurar servidores web
+            como <strong>Nginx</strong>, usar herramientas como JSON Server para mocking y entender los fundamentos de
+            las
+            pruebas con <strong>Selenium</strong>.</li>
+          <li><strong>Frontend y JavaScript:</strong> Cubrimos los fundamentos de <strong>JavaScript</strong>, HTML5 y
+            CSS3
+            para que puedas construir interfaces de usuario interactivas y conectarlas con tus servicios de backend.
+          </li>
+        </ul>
+
+        <p>¿Buscas guías, fragmentos de código o material de estudio detallado sobre estos y otros temas de ingeniería y
+          ciencias básicas? Visita nuestra sección completa de materiales educativos.</p>
+
+        <div style="text-align: center; margin-top: 2rem;">
+          <a class="btn primary" href="recursos.html">Explorar Todos los Recursos</a>
+        </div>
+      </div>
+    </section>
+
     <section id="videos" class="content-section">
       <h2>Últimos Videos</h2>
+      <section id="videos" class="content-section">
+        <h2>Últimos Videos</h2>
 
-      <!-- Carrusel de videos -->
-      <div class="videos-carousel">
-        <button class="carousel-nav prev" aria-label="Anterior">◀</button>
-        <div class="carousel-viewport">
-          <div class="carousel-track">
-            <!-- Los videos se cargarán dinámicamente aquí -->
+        <!-- Carrusel de videos -->
+        <div class="videos-carousel">
+          <button class="carousel-nav prev" aria-label="Anterior">◀</button>
+          <div class="carousel-viewport">
+            <div class="carousel-track">
+              <!-- Los videos se cargarán dinámicamente aquí -->
+            </div>
           </div>
+          <button class="carousel-nav next" aria-label="Siguiente">▶</button>
         </div>
-        <button class="carousel-nav next" aria-label="Siguiente">▶</button>
-      </div>
-    </section>
-    <section id="noticias" class="content-section">
-      <h2>Noticias y Avisos</h2>
-      <div class="news-grid">
-        <!-- Los avisos se cargarán dinámicamente -->
-      </div>
-    </section>
+      </section>
+      <section id="noticias" class="content-section">
+        <h2>Noticias y Avisos</h2>
+        <div class="news-grid">
+          <!-- Los avisos se cargarán dinámicamente -->
+        </div>
+      </section>
   </main>
 
   <footer class="site-footer">

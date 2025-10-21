@@ -1,31 +1,39 @@
-:root{
-  --bg:#0f0f0f;
-  --panel:#222;
-  --panel-2:#2a2a2a;
-  --accent:#f6b16b;
-  --text:#fff;
-  --muted:#bdbdbd;
-  --max-width:1400px;
+:root {
+  --bg: #0f0f0f;
+  --panel: #222;
+  --panel-2: #2a2a2a;
+  --accent: #f6b16b;
+  --text: #fff;
+  --muted: #bdbdbd;
+  --max-width: 1400px;
 }
 
 /* Estilos base */
-*{box-sizing:border-box}
-html,body{height:100%}
+* {
+  box-sizing: border-box
+}
+
+html,
+body {
+  height: 100%
+}
+
 body {
   margin: 0;
-  padding-top: 80px; /* Ajusta este valor según la altura de tu header */
-  font-family:"Montserrat",system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
-  background:var(--bg);
-  color:var(--text);
-  -webkit-font-smoothing:antialiased;
-  -moz-osx-font-smoothing:grayscale;
+  padding-top: 80px;
+  /* Ajusta este valor según la altura de tu header */
+  font-family: "Montserrat", system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial;
+  background: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* Header y Navegación */
-.header{
-  background:#0b0b0b;
-  padding:18px 20px;
-  border-bottom:1px solid rgba(255,255,255,0.03);
+.header {
+  background: #0b0b0b;
+  padding: 18px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
   position: fixed;
   width: 100%;
   top: 0;
@@ -43,44 +51,46 @@ body {
   gap: 20px;
 }
 
-.main-nav ul{
-  list-style:none;
-  margin:0;
-  padding:0;
-  display:flex;
-  gap:20px;
-  align-items:center;
+.main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+  align-items: center;
 }
 
-.main-nav a{
-  color:var(--text);
-  text-decoration:none;
-  font-size:14px;
-  opacity:0.9;
+.main-nav a {
+  color: var(--text);
+  text-decoration: none;
+  font-size: 14px;
+  opacity: 0.9;
 }
 
-.main-nav a:hover{opacity:1}
+.main-nav a:hover {
+  opacity: 1
+}
 
 /* Footer */
 .site-footer {
   padding: 28px 20px;
   text-align: left;
   color: var(--muted);
-  border-top: 1px solid rgba(255,255,255,0.03);
+  border-top: 1px solid rgba(255, 255, 255, 0.03);
   width: calc(100% - 80px);
   margin: 40px auto 0;
 }
 
 /* Utilidades comunes */
-.btn{
-  display:inline-block;
-  text-decoration:none;
-  padding:12px 26px;
-  border-radius:36px;
-  font-weight:600;
-  color:#111;
-  background:#fff;
-  box-shadow:none;
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px 26px;
+  border-radius: 36px;
+  font-weight: 600;
+  color: #111;
+  background: #fff;
+  box-shadow: none;
 }
 
 .content-section {
@@ -92,7 +102,76 @@ body {
 }
 
 /* Media Queries base */
-@media (max-width:900px){
-  .nav-inner{margin:0 auto;}
-  .site-footer{margin:40px auto 0 auto; text-align:center;}
+@media (max-width: 900px) {
+
+  /* --- 1. Ajustes de padding y ancho --- */
+  .nav-inner,
+  .content-section,
+  .site-footer {
+    /* Usamos 20px de espacio lateral en lugar de 80px */
+    width: calc(100% - 40px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .site-footer {
+    text-align: center;
+  }
+
+  /* --- 2. Arreglo del Header y Menú (LO MÁS IMPORTANTE) --- */
+  .nav-inner {
+    flex-direction: column;
+    /* Apila el logo y la navegación */
+    gap: 15px;
+    /* Reduce el espacio entre logo y nav */
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    /* Apila los enlaces del menú */
+    gap: 15px;
+    /* Espacio entre enlaces */
+    width: 100%;
+    text-align: center;
+  }
+
+  /* --- 3. Arreglo del Hero (index.html y redes.html) --- */
+  /* (Debes añadir esto a componentes.css o base.css) */
+  .hero-inner {
+    flex-direction: column-reverse;
+    /* Pone el texto encima del video/imagen */
+    text-align: center;
+  }
+
+  .hero-izq {
+    margin-top: 1.5rem;
+  }
+
+  /* Reduce el tamaño del título en móviles */
+  .hero-izq h1 {
+    font-size: 2.2rem;
+    /* Un poco más pequeño para móviles */
+  }
+
+  /* --- 4. Arreglo de Tarjetas (redes.html y recursos.html) --- */
+  /* (Debes añadir esto a componentes.css o base.css) */
+  .social-grid,
+  .guia-cards,
+  .carreras-container,
+  .hero-grid {
+    /* Si usas Grid */
+    grid-template-columns: 1fr;
+    /* Fuerza UNA sola columna */
+
+    /* Si usas Flexbox */
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social-card,
+  .guia-card,
+  .carrera {
+    width: 90%;
+    /* Evita que toquen los bordes */
+  }
 }
