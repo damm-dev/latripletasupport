@@ -1,6 +1,6 @@
 # LaTripletaSupport
 
-![Banner](https://latripletasupport.pages.dev/assets/img/banner.png)
+![Banner](https://latripletasupport.pages.dev/assets/img/LaTripletaBanner.jpg)
 
 **LaTripletaSupport** es una plataforma dedicada a compartir tutoriales de programación y tecnología, pensada para estudiantes y apasionados de la informática.
 
