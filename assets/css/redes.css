@@ -98,8 +98,74 @@
   width:56px; height:56px; border-radius:12px; display:grid; place-items:center; background: rgba(255,255,255,0.04);
 }
 .social-card .icon svg { width:28px; height:28px; fill:#fff; opacity:0.95; }
-.social-card .icon.yt { box-shadow: 0 0 0 2px rgba(246,42,42,0.18) inset; }
-.social-card .icon.x  { box-shadow: 0 0 0 2px rgba(160,160,160,0.18) inset; }
+.social-card .icon.yt {
+  position: relative;
+  background: rgba(246,42,42,0.18);
+  border-radius: 12px;
+}
+.social-card .icon.yt::before {
+  content: '';
+  position: absolute;
+  top: 2px; left: 2px; right: 2px; bottom: 2px;
+  background: rgba(255,255,255,0.04);
+  border-radius: 10px;
+  z-index: 1;
+}
+.social-card .icon.yt svg {
+  position: relative;
+  z-index: 2;
+}
+.social-card .icon.x {
+  position: relative;
+  background: rgba(160,160,160,0.18);
+  border-radius: 12px;
+}
+.social-card .icon.x::before {
+  content: '';
+  position: absolute;
+  top: 2px; left: 2px; right: 2px; bottom: 2px;
+  background: rgba(255,255,255,0.04);
+  border-radius: 10px;
+  z-index: 1;
+}
+.social-card .icon.x svg {
+  position: relative;
+  z-index: 2;
+}
+.social-card .icon.fb {
+  position: relative;
+  background: rgba(59,89,152,0.18);
+  border-radius: 12px;
+}
+.social-card .icon.fb::before {
+  content: '';
+  position: absolute;
+  top: 2px; left: 2px; right: 2px; bottom: 2px;
+  background: rgba(255,255,255,0.04);
+  border-radius: 10px;
+  z-index: 1;
+}
+.social-card .icon.fb svg {
+  position: relative;
+  z-index: 2;
+}
+.social-card .icon.ig {
+  position: relative;
+  background: rgba(225,48,108,0.18);
+  border-radius: 12px;
+}
+.social-card .icon.ig::before {
+  content: '';
+  position: absolute;
+  top: 2px; left: 2px; right: 2px; bottom: 2px;
+  background: rgba(255,255,255,0.04);
+  border-radius: 10px;
+  z-index: 1;
+}
+.social-card .icon.ig svg {
+  position: relative;
+  z-index: 2;
+}
 
 .social-card h3 { margin:0 0 6px; font-size:16px; color: #fff; }
 .social-card p  { margin:0 0 10px; color: rgba(255,255,255,0.84); font-size:14px; }
