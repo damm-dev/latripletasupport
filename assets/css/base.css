@@ -101,7 +101,7 @@ body {
 }
 
 /* Media queries para responsividad */
-@media (max-width: 768px) {
+@media (max-width: 845px) {
   .hamburger {
     display: flex;
   }
