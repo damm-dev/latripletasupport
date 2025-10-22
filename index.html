@@ -59,6 +59,12 @@
         <span class="brand-name">LA TRIPLETA SUPPORT</span>
       </div>
 
+      <button class="hamburger" aria-label="Menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
       <nav class="main-nav">
         <ul>
           <li><a class="btn-donar" href="https://www.youtube.com/@LaTripletaSupport/posts">Publicaciones YT ▸</a>
@@ -155,9 +161,9 @@
         <h2>Noticias y Avisos</h2>
         <div class="news-grid">
           <article class="news-card">
-            <h3>🎉 Nuevo Curso Django</h3>
-            <p>Próximamente lanzaremos un curso completo de Django para principiantes. ¡Mantente atento!</p>
-            <span class="date">Octubre 2023</span>
+            <h3>🎉 Nuevo Curso de Figma</h3>
+            <p>Próximamente lanzaremos un curso completo de Figma para principiantes. ¡Mantente atento!</p>
+            <span class="date">Octubre 2025</span>
           </article>
           <article class="news-card">
             <h3>📱 Series de APIs REST</h3>
@@ -177,7 +183,17 @@
     <p>&copy; 2025 LaTripletaSupport. Todos los derechos reservados.</p>
   </footer>
   <script>
-    document.addEventListener('DOMContentLoaded', loadYoutubeVideos);
+    document.addEventListener('DOMContentLoaded', function() {
+      loadYoutubeVideos();
+
+      // Toggle menú hamburguesa
+      const hamburger = document.querySelector('.hamburger');
+      const nav = document.querySelector('.main-nav');
+
+      hamburger.addEventListener('click', function() {
+        nav.classList.toggle('open');
+      });
+    });
   </script>
 </body>
 

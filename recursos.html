@@ -43,6 +43,12 @@
                 <span class="brand-name">LA TRIPLETA SUPPORT</span>
             </div>
 
+            <button class="hamburger" aria-label="Menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
             <nav class="main-nav">
                 <ul>
                     <li><a class="btn-donar" href="https://www.youtube.com/@LaTripletaSupport/posts">Publicaciones YT
@@ -107,19 +113,30 @@
 
     <script src="./assets/js/recursos.js"></script>
     <script>
-        const contenedorCarreras = document.getElementById("carreras-container");
+        document.addEventListener('DOMContentLoaded', function() {
+            // Toggle menú hamburguesa
+            const hamburger = document.querySelector('.hamburger');
+            const nav = document.querySelector('.main-nav');
 
-        for (let key in carreras) {
-            const div = document.createElement("div");
-            div.className = "carrera";
-            div.onclick = () => mostrarMaterias(key);
+            hamburger.addEventListener('click', function() {
+                nav.classList.toggle('open');
+            });
 
-            const h3 = document.createElement("h3");
-            h3.textContent = carreras[key].nombre;
+            // Código existente para recursos
+            const contenedorCarreras = document.getElementById("carreras-container");
 
-            div.appendChild(h3);
-            contenedorCarreras.appendChild(div);
-        }
+            for (let key in carreras) {
+                const div = document.createElement("div");
+                div.className = "carrera";
+                div.onclick = () => mostrarMaterias(key);
+
+                const h3 = document.createElement("h3");
+                h3.textContent = carreras[key].nombre;
+
+                div.appendChild(h3);
+                contenedorCarreras.appendChild(div);
+            }
+        });
     </script>
 </body>
 

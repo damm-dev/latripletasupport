@@ -2,7 +2,7 @@
   --bg: #0f0f0f;
   --panel: #222;
   --panel-2: #2a2a2a;
-  --accent: #f6b16b;
+  --accent: #4DC4FF;
   --text: #fff;
   --muted: #bdbdbd;
   --max-width: 1400px;
@@ -75,6 +75,57 @@ body {
 
 .main-nav a:hover {
   opacity: 1
+}
+
+/* Menú hamburguesa */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 10px;
+  background: none;
+  border: none;
+  color: var(--text);
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: var(--text);
+  margin: 3px 0;
+  transition: 0.3s;
+}
+
+.main-nav ul {
+  transition: all 0.3s ease;
+}
+
+/* Media queries para responsividad */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .main-nav ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--panel);
+    flex-direction: column;
+    padding: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    gap: 15px;
+  }
+
+  .main-nav.open ul {
+    display: flex;
+  }
+
+  .nav-inner {
+    position: relative;
+  }
 }
 
 /* Footer */
